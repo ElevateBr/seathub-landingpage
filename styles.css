@@ -593,11 +593,7 @@ body {
 /* Seção de Como Funciona */
 .how-it-works-section {
     padding: 100px 0;
-    background: linear-gradient(rgba(248, 249, 250, 0.9), rgba(248, 249, 250, 0.9)), 
-                url('./images/background1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background: #ffffff;
 }
 
 .steps-container {

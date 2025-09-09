@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Anuncie seu espaço de coworking no SeatHub e conecte-se com milhares de profissionais. Aumente sua receita e maximize a ocupação do seu espaço com nossa plataforma inteligente.">
-    <meta name="keywords" content="anunciar coworking, cadastrar espaço, gestão coworking, receita coworking, plataforma coworking, gestão de espaços">
+    <meta name="keywords" content="anunciar coworking, cadastrar espaço, gestão coworking, receita coworking, plataforma coworking, gestão de espaços, alugar espaço, monetizar espaço, reservas online">
     <meta name="author" content="SeatHub">
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="msapplication-TileColor" content="#2563eb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="geo.region" content="BR">
+    <meta name="geo.placename" content="Brasil">
+    <meta name="language" content="pt-BR">
     <meta property="og:title" content="SeatHub - Anuncie Seu Espaço de Coworking e Maximize Sua Receita">
     <meta property="og:description" content="Transforme seu espaço em uma fonte de receita consistente. Conecte-se com profissionais qualificados e maximize a ocupação do seu coworking.">
     <meta property="og:type" content="website">
@@ -23,19 +31,52 @@
     <link rel="shortcut icon" type="image/png" href="./images/favicon.png">
     <link rel="apple-touch-icon" href="./images/favicon.png">
     <link rel="canonical" href="https://user.seathub.net/">
-    <link rel="alternate" hreflang="pt-br" href="https://user.seathub.net/">
+    <link rel="alternate" hreflang="pt-BR" href="https://user.seathub.net/">
     <link rel="alternate" hreflang="en" href="https://user.seathub.net/en/">
     <link rel="alternate" hreflang="es" href="https://user.seathub.net/es/">
     <link rel="alternate" hreflang="x-default" href="https://user.seathub.net/">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Schema Markup para SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "SeatHub",
+        "description": "Plataforma inteligente para anunciar espaços de coworking e maximizar receitas",
+        "url": "https://user.seathub.net",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web, iOS, Android",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "BRL",
+            "description": "Cadastro gratuito, pague apenas comissão sobre reservas"
+        },
+        "provider": {
+            "@type": "Organization",
+            "name": "SeatHub",
+            "url": "https://user.seathub.net",
+            "logo": "https://user.seathub.net/images/seathubLogo01.png"
+        },
+        "featureList": [
+            "Gestão de reservas em tempo real",
+            "Dashboard completo com analytics",
+            "App mobile para iOS e Android",
+            "Pagamentos automáticos e seguros",
+            "Marketing automático para espaços",
+            "Suporte humanizado 24/7"
+        ]
+    }
+    </script>
 </head>
 <body>
     <header class="header">
         <div class="header-container">
             <a href="#" class="logo">
-                <img src="./images/seathubLogo01.png" alt="SeatHub Logo" class="logo-img">
+                <img src="./images/seathubLogo01.png" alt="SeatHub Logo" class="logo-img" loading="lazy">
             </a>
             
             <nav role="navigation" aria-label="Menu principal">
@@ -78,7 +119,6 @@
             <div class="hero-text">
                 <h1 id="hero-title">
                     Transforme Seu Espaço em <br><span class="highlight">Fonte de Receita</span>
-                    Consistente
                 </h1>
                 <p>
                     Anuncie seu espaço de coworking no SeatHub e conecte-se com milhares de 
@@ -95,7 +135,7 @@
                     </a>
                 </div>
 
-                <div class="stats-container">
+                <!-- <div class="stats-container">
                     <div class="stat-item">
                         <span class="stat-number">R$ 15k+</span>
                         <span class="stat-label">Receita Média/Mês</span>
@@ -108,7 +148,7 @@
                         <span class="stat-number">500+</span>
                         <span class="stat-label">Espaços Ativos</span>
                     </div>
-                </div>
+                </div> -->
             </div>
             
             <div class="hero-image">
@@ -162,11 +202,6 @@
                     <p class="space-type-description">
                         Espaços compartilhados com mesas, cadeiras e ambiente colaborativo
                     </p>
-                    <ul class="space-type-features">
-                        <li>Mesas individuais</li>
-                        <li>Área comum</li>
-                        <li>WiFi e energia</li>
-                    </ul>
                 </div>
                 
                 <div class="space-type-card">
@@ -177,11 +212,6 @@
                     <p class="space-type-description">
                         Salas privadas equipadas para reuniões e apresentações
                     </p>
-                    <ul class="space-type-features">
-                        <li>Projetor/TV</li>
-                        <li>Quadro branco</li>
-                        <li>Mesa para reuniões</li>
-                    </ul>
                 </div>
                 
                 <div class="space-type-card">
@@ -192,11 +222,6 @@
                     <p class="space-type-description">
                         Escritórios fechados para trabalho individual ou em equipe
                     </p>
-                    <ul class="space-type-features">
-                        <li>Privacidade total</li>
-                        <li>Mobiliário completo</li>
-                        <li>Ar condicionado</li>
-                    </ul>
                 </div>
                 
                 <div class="space-type-card">
@@ -207,11 +232,6 @@
                     <p class="space-type-description">
                         Ambientes amplos para workshops, palestras e eventos corporativos
                     </p>
-                    <ul class="space-type-features">
-                        <li>Capacidade para grupos</li>
-                        <li>Equipamentos de som</li>
-                        <li>Iluminação adequada</li>
-                    </ul>
                 </div>
                 
                 <div class="space-type-card">
@@ -222,11 +242,6 @@
                     <p class="space-type-description">
                         Espaços privados e silenciosos para chamadas e videoconferências
                     </p>
-                    <ul class="space-type-features">
-                        <li>Isolamento acústico</li>
-                        <li>Ventilação adequada</li>
-                        <li>Iluminação controlada</li>
-                    </ul>
                 </div>
                 
                 <div class="space-type-card">
@@ -237,11 +252,6 @@
                     <p class="space-type-description">
                         Qualquer espaço que possa ser usado para trabalho ou reuniões
                     </p>
-                    <ul class="space-type-features">
-                        <li>Flexibilidade total</li>
-                        <li>Defina seu próprio tipo</li>
-                        <li>Monetize qualquer espaço</li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -264,7 +274,7 @@
                     </div>
                     <h3 class="benefit-title">Aumento de Receita</h3>
                     <p class="benefit-description">
-                        Maximize a ocupação do seu espaço e aumente sua receita em até 40% com nossa base de usuários qualificados.
+                        Maximize a ocupação do seu espaço e aumente sua receita.
                     </p>
                 </div>
                 
@@ -272,15 +282,15 @@
                     <div class="benefit-icon">
                         <i class="fas fa-users"></i>
                     </div>
-                    <h3 class="benefit-title">Base de Clientes Qualificados</h3>
+                    <h3 class="benefit-title">Acesso a Profissionais</h3>
                     <p class="benefit-description">
-                        Conecte-se com milhares de profissionais que buscam espaços de trabalho produtivos e inspiradores.
+                        Conecte-se com profissionais que valorizam espaços de trabalho de qualidade e estão dispostos a pagar por isso.
                     </p>
                 </div>
                 
                 <div class="benefit-card">
                     <div class="benefit-icon">
-                        <i class="fas fa-cogs"></i>
+                        <i class="fas fa-chart-pie"></i>
                     </div>
                     <h3 class="benefit-title">Gestão Simplificada</h3>
                     <p class="benefit-description">
@@ -300,11 +310,11 @@
                 
                 <div class="benefit-card">
                     <div class="benefit-icon">
-                        <i class="fas fa-shield-alt"></i>
+                        <i class="fas fa-bullhorn"></i>
                     </div>
-                    <h3 class="benefit-title">Pagamentos Seguros</h3>
+                    <h3 class="benefit-title">Marketing Automático</h3>
                     <p class="benefit-description">
-                        Sistema de pagamento integrado e seguro, com repasses automáticos e relatórios detalhados.
+                        Seu espaço aparecerá automaticamente para vários usuários, aumentando sua visibilidade sem esforço.
                     </p>
                 </div>
                 
@@ -347,7 +357,7 @@
                     <div class="step-number">2</div>
                     <h3 class="step-title">Configure</h3>
                     <p class="step-description">
-                        Defina horários de funcionamento, disponibilidade, políticas de cancelamento e comece a receber reservas.
+                        Cadastre serviços, defina preços, e comece a receber reservas.
                     </p>
                     <div class="step-arrow">
                         <i class="fas fa-arrow-right"></i>
@@ -421,30 +431,9 @@
                     
                     <article class="amenity-item">
                         <div class="amenity-icon">
-                            <i class="fas fa-lock"></i>
-                        </div>
-                        <span class="amenity-text">Armários Privados</span>
-                    </article>
-                    
-                    <article class="amenity-item">
-                        <div class="amenity-icon">
-                            <i class="fas fa-print"></i>
-                        </div>
-                        <span class="amenity-text">Impressora/Scanner</span>
-                    </article>
-                    
-                    <article class="amenity-item">
-                        <div class="amenity-icon">
                             <i class="fas fa-phone"></i>
                         </div>
                         <span class="amenity-text">Cabines Telefônicas</span>
-                    </article>
-                    
-                    <article class="amenity-item">
-                        <div class="amenity-icon">
-                            <i class="fas fa-dumbbell"></i>
-                        </div>
-                        <span class="amenity-text">Área de Descanso</span>
                     </article>
                     
                     <article class="amenity-item">
@@ -544,18 +533,18 @@
             <header class="section-header">
                 <h2 class="section-title">Garantias e Segurança</h2>
                 <p class="section-subtitle">
-                    Sua tranquilidade é nossa prioridade. Oferecemos proteção completa para seu espaço e negócio
+                    Sua tranquilidade é nossa prioridade. Oferecemos proteção para seu negócio
                 </p>
             </header>
             
             <div class="guarantee-grid">
                 <div class="guarantee-card">
                     <div class="guarantee-icon">
-                        <i class="fas fa-shield-alt"></i>
+                        <i class="fas fa-file-contract"></i>
                     </div>
-                    <h3 class="guarantee-title">Seguro do Espaço</h3>
+                    <h3 class="guarantee-title">Compromisso Garantido</h3>
                     <p class="guarantee-description">
-                        Seu espaço está protegido com seguro contra danos causados por usuários
+                        Contrato que firma o nosso compromisso com você!
                     </p>
                 </div>
                 
@@ -583,9 +572,9 @@
                     <div class="guarantee-icon">
                         <i class="fas fa-headset"></i>
                     </div>
-                    <h3 class="guarantee-title">Suporte 24/7</h3>
+                    <h3 class="guarantee-title">Suporte Humanizado</h3>
                     <p class="guarantee-description">
-                        Nossa equipe está sempre disponível para resolver qualquer questão
+                        Atendimento personalizado com pessoas reais que entendem suas necessidades e oferecem soluções adequadas
                     </p>
                 </div>
                 
@@ -595,7 +584,7 @@
                     </div>
                     <h3 class="guarantee-title">Política de Cancelamento</h3>
                     <p class="guarantee-description">
-                        Flexibilidade total para cancelar reservas e ajustar sua agenda
+                        Flexibilidade para definir sua própria política de cancelamento
                     </p>
                 </div>
                 
@@ -728,14 +717,6 @@
                 </div>
                 
                 <div class="faq-item">
-                    <h3 class="faq-question">Como funciona o pagamento das reservas?</h3>
-                    <p class="faq-answer">
-                        Os pagamentos são processados automaticamente e repassados para sua conta em até 48 horas. 
-                        Você recebe relatórios detalhados de todas as transações.
-                    </p>
-                </div>
-                
-                <div class="faq-item">
                     <h3 class="faq-question">Posso definir meus próprios preços?</h3>
                     <p class="faq-answer">
                         Sim! Você tem controle total sobre os preços, horários de funcionamento e disponibilidade. 
@@ -758,30 +739,12 @@
                         de novas reservas e pode gerenciar tudo em tempo real.
                     </p>
                 </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">Meu espaço está protegido contra danos?</h3>
-                    <p class="faq-answer">
-                        Sim! Oferecemos seguro para seu espaço contra danos causados por usuários. 
-                        Todos os usuários são verificados e passam por processo de validação.
-                    </p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">Quanto tempo leva para começar a receber reservas?</h3>
-                    <p class="faq-answer">
-                        Após cadastrar seu espaço e configurar disponibilidade, você pode começar a receber 
-                        reservas em até 24 horas. Nossa equipe te ajuda a otimizar seu anúncio.
-                    </p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3 class="faq-question">Posso cancelar reservas se necessário?</h3>
-                    <p class="faq-answer">
-                        Sim! Você tem flexibilidade total para cancelar reservas, ajustar horários e 
-                        modificar disponibilidade conforme sua necessidade.
-                    </p>
-                </div>
+            </div>
+            
+            <div class="faq-cta" style="text-align: center; margin-top: 2rem;">
+                <a href="https://seathub.net/faq" target="_blank" class="btn-secondary">
+                    <i class="fas fa-question-circle"></i> Mais perguntas? Acesse a nossa página completa de FAQ
+                </a>
             </div>
         </div>
     </section>
@@ -792,14 +755,14 @@
             <h2 class="cta-title">Pronto para Maximizar a Receita do Seu Espaço?</h2>
             <p class="cta-subtitle">
                 Junte-se a centenas de proprietários que já transformaram seus espaços em fontes de receita consistentes. 
-                Cadastre seu espaço hoje mesmo e comece a monetizar em 24 horas.
+                Cadastre seu espaço hoje mesmo e comece a monetizar.
             </p>
             <div class="cta-buttons">
                 <a href="https://seathub.net/" target="_blank" class="cta-primary">
                     <i class="fas fa-plus"></i> Cadastrar Meu Espaço
                 </a>
-                <a href="#amenities" class="cta-secondary">
-                    <i class="fas fa-star"></i> Ver Comodidades
+                <a href="#app" class="cta-secondary">
+                    <i class="fas fa-mobile-alt"></i> Baixar App
                 </a>
             </div>
         </div>
@@ -811,7 +774,7 @@
             <div class="footer-top">
                 <div class="footer-brand">
                     <a href="#" class="footer-logo">
-                        <img src="./images/seathubLogo02.png" alt="SeatHub Logo" class="footer-logo-img">
+                        <img src="./images/seathubLogo02.png" alt="SeatHub Logo" class="footer-logo-img" loading="lazy">
                     </a>
                     <p class="footer-tagline">
                         Plataforma inteligente que revoluciona a gestão de espaços de coworking, conectando proprietários a milhares de profissionais e maximizando receitas.
