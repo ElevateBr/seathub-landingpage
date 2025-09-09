@@ -1,1 +1,830 @@
-olá
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anuncie seu espaço de coworking no SeatHub e conecte-se com milhares de profissionais. Aumente sua receita e maximize a ocupação do seu espaço com nossa plataforma inteligente.">
+    <meta name="keywords" content="anunciar coworking, cadastrar espaço, gestão coworking, receita coworking, plataforma coworking, gestão de espaços, alugar espaço, monetizar espaço, reservas online">
+    <meta name="author" content="SeatHub">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="msapplication-TileColor" content="#2563eb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="geo.region" content="BR">
+    <meta name="geo.placename" content="Brasil">
+    <meta name="language" content="pt-BR">
+    <meta property="og:title" content="SeatHub - Anuncie Seu Espaço de Coworking e Maximize Sua Receita">
+    <meta property="og:description" content="Transforme seu espaço em uma fonte de receita consistente. Conecte-se com profissionais qualificados e maximize a ocupação do seu coworking.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://user.seathub.net">
+    <meta property="og:image" content="https://user.seathub.net/images/SiteSeatHub.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://user.seathub.net/images/SiteSeatHub.png">
+    <meta name="twitter:title" content="SeatHub - Anuncie Seu Espaço de Coworking e Maximize Sua Receita">
+    <meta name="twitter:description" content="Transforme seu espaço em uma fonte de receita consistente. Conecte-se com profissionais qualificados e maximize a ocupação do seu coworking.">
+    <title>SeatHub | Anuncie Seu Espaço de Coworking e Maximize Sua Receita</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png">
+    <link rel="apple-touch-icon" href="./images/favicon.png">
+    <link rel="canonical" href="https://user.seathub.net/">
+    <link rel="alternate" hreflang="pt-BR" href="https://user.seathub.net/">
+    <link rel="alternate" hreflang="en" href="https://user.seathub.net/en/">
+    <link rel="alternate" hreflang="es" href="https://user.seathub.net/es/">
+    <link rel="alternate" hreflang="x-default" href="https://user.seathub.net/">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-mob.css">
+    
+    <!-- Schema Markup para SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "SeatHub",
+        "description": "Plataforma inteligente para anunciar espaços de coworking e maximizar receitas",
+        "url": "https://user.seathub.net",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web, iOS, Android",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "BRL",
+            "description": "Cadastro gratuito, pague apenas comissão sobre reservas"
+        },
+        "provider": {
+            "@type": "Organization",
+            "name": "SeatHub",
+            "url": "https://user.seathub.net",
+            "logo": "https://user.seathub.net/images/seathubLogo01.png"
+        },
+        "featureList": [
+            "Gestão de reservas em tempo real",
+            "Dashboard completo com analytics",
+            "App mobile para iOS e Android",
+            "Pagamentos automáticos e seguros",
+            "Marketing automático para espaços",
+            "Suporte humanizado 24/7"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <img src="./images/seathubLogo01.png" alt="SeatHub Logo" class="logo-img" loading="lazy">
+            </a>
+            
+            <nav role="navigation" aria-label="Menu principal">
+                <ul class="nav-menu">
+                    <li><a href="#space-types">Espaços</a></li>
+                    <li><a href="#benefits">Vantagens</a></li>
+                    <li><a href="#how-it-works">Como Funciona</a></li>
+                    <li><a href="#amenities">Comodidades</a></li>
+                    <!-- <li><a href="#testimonials">Depoimentos</a></li> -->
+                    <li><a href="#faq">FAQ</a></li>
+                    <li class="mobile-cta">
+                        <a href="https://seathub.net/" target="_blank" class="header-cta mobile-only">Começar</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="header-right">
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="pt">PT</button>
+                    <a href="./en/" class="lang-btn">EN</a>
+                    <a href="./es/" class="lang-btn">ES</a>
+                </div>
+                
+                <a href="https://seathub.net/" target="_blank" class="header-cta">Começar</a>
+                
+                <button class="mobile-menu-toggle" aria-label="Menu mobile">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Seção Hero - Apresentativa -->
+        <section class="hero-section" role="banner" aria-labelledby="hero-title">
+        <div class="floating-elements">
+            <i class="fas fa-chart-line floating-icon"></i>
+            <i class="fas fa-users floating-icon"></i>
+            <i class="fas fa-dollar-sign floating-icon"></i>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 id="hero-title">
+                    Transforme Seu Espaço em <br><span class="highlight">Fonte de Receita</span>
+                </h1>
+                <p>
+                    Anuncie seu espaço de coworking no SeatHub e conecte-se com milhares de 
+                    profissionais qualificados. Maximize a ocupação, aumente sua receita e 
+                    transforme seu investimento em um negócio lucrativo.
+                </p>
+                
+                <div class="cta-buttons">
+                    <a href="https://seathub.net/" target="_blank" class="btn-primary">
+                        <i class="fas fa-plus"></i> Cadastrar Meu Espaço
+                    </a>
+                    <a href="#how-it-works" class="btn-secondary">
+                        <i class="fas fa-play"></i> Ver Como Funciona
+                    </a>
+                </div>
+
+                <!-- <div class="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-number">R$ 15k+</span>
+                        <span class="stat-label">Receita Média/Mês</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">85%</span>
+                        <span class="stat-label">Taxa de Ocupação</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Espaços Ativos</span>
+                    </div>
+                </div> -->
+            </div>
+            
+            <div class="hero-image">
+                <!-- Imagens flutuantes dos espaços -->
+                <div class="floating-spaces">
+                    <div class="floating-space space-1">
+                        <img src="./images/space01.jpeg" alt="Espaço de coworking 1" loading="lazy">
+                    </div>
+                    <div class="floating-space space-3">
+                        <img src="./images/space03.jpeg" alt="Espaço de coworking 3" loading="lazy">
+                    </div>
+                    <div class="floating-space space-4">
+                        <img src="./images/space04.jpeg" alt="Espaço de coworking 4" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="monitor-container">
+                    <div class="monitor-frame">
+                        <div class="monitor-screen">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile Device -->
+                <div class="mobile-container">
+                    <div class="mobile-frame">
+                        <div class="mobile-screen">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Tipos de Espaços -->
+    <section class="space-types-section" id="space-types">
+        <div class="space-types-container">
+            <header class="section-header">
+                <h2 class="section-title">Anuncie Seu Local de Coworking, Reunião, Escritório e Muito Mais!</h2>
+                <p class="section-subtitle">
+                    Seja qual for o tipo de espaço que você possui, o SeatHub é a plataforma ideal para monetizá-lo
+                </p>
+            </header>
+            
+            <div class="space-types-grid">
+                <div class="space-type-card">
+                    <div class="space-type-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="space-type-title">Coworking</h3>
+                    <p class="space-type-description">
+                        Espaços compartilhados com mesas, cadeiras e ambiente colaborativo
+                    </p>
+                </div>
+                
+                <div class="space-type-card">
+                    <div class="space-type-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="space-type-title">Salas de Reunião</h3>
+                    <p class="space-type-description">
+                        Salas privadas equipadas para reuniões e apresentações
+                    </p>
+                </div>
+                
+                <div class="space-type-card">
+                    <div class="space-type-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="space-type-title">Escritórios Privados</h3>
+                    <p class="space-type-description">
+                        Escritórios fechados para trabalho individual ou em equipe
+                    </p>
+                </div>
+                
+                <div class="space-type-card">
+                    <div class="space-type-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="space-type-title">Espaços para Eventos</h3>
+                    <p class="space-type-description">
+                        Ambientes amplos para workshops, palestras e eventos corporativos
+                    </p>
+                </div>
+                
+                <div class="space-type-card">
+                    <div class="space-type-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="space-type-title">Cabines Telefônicas</h3>
+                    <p class="space-type-description">
+                        Espaços privados e silenciosos para chamadas e videoconferências
+                    </p>
+                </div>
+                
+                <div class="space-type-card">
+                    <div class="space-type-icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <h3 class="space-type-title">Outros Espaços</h3>
+                    <p class="space-type-description">
+                        Qualquer espaço que possa ser usado para trabalho ou reuniões
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Benefícios -->
+    <section class="benefits-section" id="benefits">
+        <div class="benefits-container">
+            <header class="section-header">
+                <h2 class="section-title">Por que anunciar no SeatHub?</h2>
+                <p class="section-subtitle">
+                    Descubra como nossa plataforma pode transformar seu espaço em uma fonte de receita consistente
+                </p>
+            </header>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="benefit-title">Aumento de Receita</h3>
+                    <p class="benefit-description">
+                        Maximize a ocupação do seu espaço e aumente sua receita.
+                    </p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="benefit-title">Acesso a Profissionais</h3>
+                    <p class="benefit-description">
+                        Conecte-se com profissionais que valorizam espaços de trabalho de qualidade e estão dispostos a pagar por isso.
+                    </p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3 class="benefit-title">Gestão Simplificada</h3>
+                    <p class="benefit-description">
+                        Dashboard completo para gerenciar reservas, preços, disponibilidade e relatórios em tempo real.
+                    </p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="benefit-title">App Mobile Completo</h3>
+                    <p class="benefit-description">
+                        Gerencie seu espaço de qualquer lugar com nosso aplicativo mobile intuitivo e funcional.
+                    </p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="benefit-title">Marketing Automático</h3>
+                    <p class="benefit-description">
+                        Seu espaço aparecerá automaticamente para vários usuários, aumentando sua visibilidade sem esforço.
+                    </p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3 class="benefit-title">Cadastro 100% Gratuito</h3>
+                    <p class="benefit-description">
+                        Comece a anunciar seu espaço sem custos iniciais. Pague apenas uma pequena comissão quando receber reservas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Como Funciona -->
+    <section class="how-it-works-section" id="how-it-works">
+        <div class="steps-container">
+            <header class="section-header">
+                <h2 class="section-title">Como Funciona</h2>
+                <p class="section-subtitle">
+                    Cadastre seu espaço e comece a receber reservas em apenas 3 passos simples
+                </p>
+            </header>
+            
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Cadastre</h3>
+                    <p class="step-description">
+                        Preencha as informações do seu espaço, adicione fotos, defina preços e comodidades disponíveis.
+                    </p>
+                    <div class="step-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Configure</h3>
+                    <p class="step-description">
+                        Cadastre serviços, defina preços, e comece a receber reservas.
+                    </p>
+                    <div class="step-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Monetize</h3>
+                    <p class="step-description">
+                        Acompanhe reservas, receba pagamentos automáticos e gerencie seu negócio através do dashboard.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Comodidades -->
+    <section class="amenities-section" id="amenities">
+        <div class="amenities-container">
+            <header class="section-header">
+                <h2 class="section-title">Destaque as Comodidades do Seu Espaço</h2>
+                <p class="section-subtitle">
+                    Mostre aos profissionais todas as comodidades que seu espaço oferece e atraia mais reservas
+                </p>
+            </header>
+            
+            <div class="amenities-content">
+                <div class="amenities-list">
+                    <article class="amenity-item">
+                        <div class="amenity-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <span class="amenity-text">WiFi de Alta Velocidade</span>
+                    </article>
+                    
+                    <article class="amenity-item">
+                        <div class="amenity-icon">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <span class="amenity-text">Café Grátis</span>
+                    </article>
+                    
+                    <article class="amenity-item">
+                        <div class="amenity-icon">
+                            <i class="fas fa-snowflake"></i>
+                        </div>
+                        <span class="amenity-text">Ar Condicionado</span>
+                    </article>
+                    
+                    <article class="amenity-item">
+                        <div class="amenity-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <span class="amenity-text">Estacionamento</span>
+                    </article>
+                    
+                    <article class="amenity-item">
+                        <div class="amenity-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <span class="amenity-text">Cozinha Completa</span>
+                    </article>
+                    
+                    <article class="amenity-item">
+                        <div class="amenity-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <span class="amenity-text">Salas de Reunião</span>
+                    </article>
+                    
+                    <article class="amenity-item">
+                        <div class="amenity-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <span class="amenity-text">Cabines Telefônicas</span>
+                    </article>
+                    
+                    <article class="amenity-item">
+                        <div class="amenity-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <span class="amenity-text">Segurança 24h</span>
+                    </article>
+                    
+                    <article class="amenity-item">
+                        <div class="amenity-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <span class="amenity-text">E Muito Mais...</span>
+                    </article>
+                </div>
+                
+                <div class="amenities-image">
+                    <img src="./images/coworking.jpg" alt="Espaço de coworking com diversas comodidades" loading="lazy">
+                    <div class="image-overlay">
+                        <h3>Destaque Seu Espaço</h3>
+                        <p>Mostre todas as comodidades que tornam seu espaço único e atraente para os profissionais</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Depoimentos de Anunciantes -->
+    <!-- <section class="testimonials-section" id="testimonials">
+        <div class="testimonials-container">
+            <header class="section-header">
+                <h2 class="section-title">O que nossos anunciantes dizem</h2>
+                <p class="section-subtitle">
+                    Histórias reais de proprietários que transformaram seus espaços em fontes de receita
+                </p>
+            </header>
+            
+            <div class="testimonials-grid">
+                <article class="testimonial-card">
+                    <div class="testimonial-stats">
+                        <span class="stat">+60%</span>
+                        <span class="stat-label">Aumento na Receita</span>
+                    </div>
+                    <blockquote class="testimonial-quote">
+                        "O SeatHub revolucionou meu negócio. Em 3 meses aumentei minha receita em 60% e agora tenho 90% de ocupação. A plataforma é intuitiva e o suporte é excepcional."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">M</div>
+                        <div class="author-info">
+                            <h4>Maria Silva</h4>
+                            <p>Proprietária - Coworking Central</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="testimonial-card">
+                    <div class="testimonial-stats">
+                        <span class="stat">R$ 25k</span>
+                        <span class="stat-label">Receita Mensal</span>
+                    </div>
+                    <blockquote class="testimonial-quote">
+                        "Antes do SeatHub, meu espaço ficava vazio 70% do tempo. Agora tenho reservas todos os dias e uma receita consistente de R$ 25k por mês."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">J</div>
+                        <div class="author-info">
+                            <h4>João Santos</h4>
+                            <p>CEO - Espaços Santos</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="testimonial-card">
+                    <div class="testimonial-stats">
+                        <span class="stat">500+</span>
+                        <span class="stat-label">Reservas/Mês</span>
+                    </div>
+                    <blockquote class="testimonial-quote">
+                        "A facilidade de gestão é impressionante. Consigo gerenciar 500+ reservas por mês sem complicação. O app mobile é perfeito para quem está sempre em movimento."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <h4>Ana Costa</h4>
+                            <p>Diretora - WorkHub Network</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Seção de Garantias -->
+    <section class="guarantee-section" id="guarantee">
+        <div class="guarantee-container">
+            <header class="section-header">
+                <h2 class="section-title">Garantias e Segurança</h2>
+                <p class="section-subtitle">
+                    Sua tranquilidade é nossa prioridade. Oferecemos proteção para seu negócio
+                </p>
+            </header>
+            
+            <div class="guarantee-grid">
+                <div class="guarantee-card">
+                    <div class="guarantee-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3 class="guarantee-title">Compromisso Garantido</h3>
+                    <p class="guarantee-description">
+                        Contrato que firma o nosso compromisso com você!
+                    </p>
+                </div>
+                
+                <div class="guarantee-card">
+                    <div class="guarantee-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3 class="guarantee-title">Usuários Verificados</h3>
+                    <p class="guarantee-description">
+                        Todos os usuários passam por verificação de identidade e histórico
+                    </p>
+                </div>
+                
+                <div class="guarantee-card">
+                    <div class="guarantee-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3 class="guarantee-title">Pagamentos Garantidos</h3>
+                    <p class="guarantee-description">
+                        Receba seus pagamentos de forma segura e automática, sem atrasos
+                    </p>
+                </div>
+                
+                <div class="guarantee-card">
+                    <div class="guarantee-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="guarantee-title">Suporte Humanizado</h3>
+                    <p class="guarantee-description">
+                        Atendimento personalizado com pessoas reais que entendem suas necessidades e oferecem soluções adequadas
+                    </p>
+                </div>
+                
+                <div class="guarantee-card">
+                    <div class="guarantee-icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <h3 class="guarantee-title">Política de Cancelamento</h3>
+                    <p class="guarantee-description">
+                        Flexibilidade para definir sua própria política de cancelamento
+                    </p>
+                </div>
+                
+                <div class="guarantee-card">
+                    <div class="guarantee-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3 class="guarantee-title">Dados Seguros</h3>
+                    <p class="guarantee-description">
+                        Seus dados e informações estão protegidos com criptografia de ponta
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Dashboard Mobile -->
+    <section class="app-section" id="app">
+        <div class="app-container">
+            <div class="app-content">
+                <h2>Gerencie Seus Espaços de Qualquer Lugar!</h2>
+                <p>
+                    Com nosso app mobile, você pode criar, gerenciar e acompanhar todos os seus espaços 
+                    diretamente do seu celular. Controle reservas, receitas e otimize sua operação 
+                    onde quer que esteja.
+                </p>
+                
+                <ul class="app-features">
+                    <li>Criar e editar espaços</li>
+                    <li>Gerenciar reservas em tempo real</li>
+                    <li>Acompanhar receitas e analytics</li>
+                    <li>Controle de disponibilidade</li>
+                    <li>Comunicação com clientes</li>
+                    <li>Notificações instantâneas</li>
+                </ul>
+                
+                <div class="app-buttons">
+                    <a href="https://apps.apple.com/br/app/seathub/id6743491748" class="app-button" aria-label="Baixar na App Store">
+                        <i class="fab fa-apple"></i>
+                        App Store
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.elevate.elevatecoworking" class="app-button" aria-label="Baixar no Google Play">
+                        <i class="fab fa-google-play"></i>
+                        Google Play
+                    </a>
+                </div>
+            </div>
+            
+            <div class="app-image">
+                <div class="app-mobile-container">
+                    <div class="app-mobile-frame">
+                        <div class="app-mobile-screen">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Depoimentos -->
+    <!-- <section class="testimonials-section" id="testimonials">
+        <div class="testimonials-container">
+            <header class="section-header">
+                <h2 class="section-title">O que nossos usuários dizem</h2>
+                <p class="section-subtitle">
+                    Histórias reais de profissionais que transformaram sua forma de trabalhar
+                </p>
+            </header>
+            
+            <div class="testimonials-grid">
+                <article class="testimonial-card">
+                    <blockquote class="testimonial-quote">
+                        "O SeatHub revolucionou minha rotina de trabalho. Encontrei espaços incríveis perto de casa e ainda fiz networking com outros profissionais da minha área."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">M</div>
+                        <div class="author-info">
+                            <h4>Maria Silva</h4>
+                            <p>Designer Freelancer</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="testimonial-card">
+                    <blockquote class="testimonial-quote">
+                        "Como empreendedor, preciso de flexibilidade. O SeatHub me permite trabalhar de diferentes locais sem perder produtividade. A interface é intuitiva e as reservas são instantâneas."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">J</div>
+                        <div class="author-info">
+                            <h4>João Santos</h4>
+                            <p>CEO - Tech Startup</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="testimonial-card">
+                    <blockquote class="testimonial-quote">
+                        "A qualidade dos espaços é excepcional. Todos têm infraestrutura completa, WiFi rápido e ambiente profissional. Recomendo para qualquer profissional que busca produtividade."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <h4>Ana Costa</h4>
+                            <p>Consultora de Marketing</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Seção FAQ para Anunciantes -->
+    <section class="faq-section" id="faq">
+        <div class="faq-container">
+            <header class="section-header">
+                <h2 class="section-title">Perguntas Frequentes</h2>
+                <p class="section-subtitle">
+                    Tire suas dúvidas sobre como anunciar e monetizar seu espaço no SeatHub
+                </p>
+            </header>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">Quanto custa para anunciar meu espaço?</h3>
+                    <p class="faq-answer">
+                        É completamente gratuito! Você só paga uma pequena comissão quando recebe reservas. 
+                        Sem taxas de cadastro, mensalidades ou custos ocultos.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Posso definir meus próprios preços?</h3>
+                    <p class="faq-answer">
+                        Sim! Você tem controle total sobre os preços, horários de funcionamento e disponibilidade. 
+                        Pode ajustar valores por horário, dia da semana ou período do ano.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Que tipos de espaços posso anunciar?</h3>
+                    <p class="faq-answer">
+                        Aceitamos coworking, salas de reunião, escritórios privados, espaços para eventos, 
+                        cabines telefônicas e qualquer espaço que possa ser usado para trabalho.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Como posso gerenciar minhas reservas?</h3>
+                    <p class="faq-answer">
+                        Através do nosso dashboard web ou app mobile. Você recebe notificações instantâneas 
+                        de novas reservas e pode gerenciar tudo em tempo real.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="faq-cta" style="text-align: center; margin-top: 2rem;">
+                <a href="https://seathub.net/faq" target="_blank" class="btn-secondary">
+                    <i class="fas fa-question-circle"></i> Mais perguntas? Acesse a nossa página completa de FAQ
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção CTA Final -->
+    <section class="cta-section" id="cta">
+        <div class="cta-container">
+            <h2 class="cta-title">Pronto para Maximizar a Receita do Seu Espaço?</h2>
+            <p class="cta-subtitle">
+                Junte-se a centenas de proprietários que já transformaram seus espaços em fontes de receita consistentes. 
+                Cadastre seu espaço hoje mesmo e comece a monetizar.
+            </p>
+            <div class="cta-buttons">
+                <a href="https://seathub.net/" target="_blank" class="cta-primary">
+                    <i class="fas fa-plus"></i> Cadastrar Meu Espaço
+                </a>
+                <a href="#app" class="cta-secondary">
+                    <i class="fas fa-mobile-alt"></i> Baixar App
+                </a>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <img src="./images/seathubLogo02.png" alt="SeatHub Logo" class="footer-logo-img" loading="lazy">
+                    </a>
+                    <p class="footer-tagline">
+                        Plataforma inteligente que revoluciona a gestão de espaços de coworking, conectando proprietários a milhares de profissionais e maximizando receitas.
+                    </p>
+                </div>
+                
+                <!-- <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div> -->
+                
+                <!-- <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Termos</a></li>
+                    </ul>
+                </div> -->
+                
+                <div class="footer-section">
+                    <h4>Desenvolvido por</h4>
+                    <ul>
+                        <li><a href="https://elevatebr.org" target="_blank">Elevate - Desenvolvimento de Software</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2025 SeatHub. Todos os direitos reservados.</p>
+                <p class="footer-developer">
+                    Desenvolvido por <a href="https://elevatebr.org" target="_blank">Elevate</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sistema de Tradução - Comentado pois agora usamos páginas estáticas separadas -->
+    <!-- <script src="translations/pt-br.js"></script> -->
+    <!-- <script src="translations/en.js"></script> -->
+    <!-- <script src="translations/es.js"></script> -->
+    <!-- <script src="translations/translations.js"></script> -->
+    <script src="seo.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
