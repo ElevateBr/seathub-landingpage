@@ -1514,6 +1514,7 @@ body {
     box-shadow: 0 5px 15px rgba(255,215,0,0.3);
 }
 
+
 .mobile-menu-toggle {
     display: none;
     background: none;
@@ -1521,6 +1522,85 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
     color: #000000;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu-toggle:hover {
+    color: #ffd700;
+}
+
+.mobile-menu-toggle.active {
+    color: #ffd700;
+}
+
+/* Garantir que o botão volte ao preto quando não estiver ativo */
+.mobile-menu-toggle:not(.active) {
+    color: #000000;
+}
+
+/* Menu mobile ativo */
+.nav-menu.active {
+    display: flex;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    z-index: 999;
+    gap: 20px;
+}
+
+.nav-menu.active li {
+    text-align: center;
+    width: 100%;
+}
+
+.nav-menu.active a {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    font-size: 1.1rem;
+    display: block;
+    width: 100%;
+}
+
+.nav-menu.active a:last-child {
+    border-bottom: none;
+}
+
+/* Botão CTA no menu mobile */
+.mobile-cta {
+    margin-top: 10px;
+    padding-top: 15px;
+    border-top: 2px solid #ffd700;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.nav-menu.active .mobile-only {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 12px 20px;
+    background: #ffd700;
+    color: #000000;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-menu.active .mobile-only:hover {
+    background: #ffed4e;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255,215,0,0.3);
 }
 
 /* Footer */
@@ -1633,325 +1713,3 @@ body {
     text-decoration: underline;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .hero-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        text-align: center;
-    }
-
-    .hero-text h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-text p {
-        font-size: 1.1rem;
-    }
-
-    .cta-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .stats-container {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .benefits-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .steps-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .step-arrow {
-        display: none;
-    }
-
-    .section-title {
-        font-size: 2.2rem;
-    }
-
-    .amenities-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .amenities-list {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-        order: 2;
-    }
-
-    .amenities-image {
-        order: 1;
-    }
-
-    .amenity-item {
-        padding: 15px 10px;
-    }
-
-    .amenity-icon {
-        width: 40px;
-        height: 40px;
-        font-size: 1.1rem;
-        margin-bottom: 10px;
-    }
-
-    .amenity-text {
-        font-size: 0.85rem;
-    }
-
-    .app-container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        text-align: center;
-    }
-
-    .app-buttons {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .testimonials-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .space-types-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .guarantee-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .faq-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .faq-item {
-        padding: 20px;
-    }
-
-    /* Responsividade para o Monitor */
-    .hero-image {
-        height: 500px;
-    }
-
-    .monitor-container {
-        height: 400px;
-        max-width: 100%;
-    }
-
-    .monitor-frame {
-        transform: rotateX(0deg) rotateY(0deg);
-    }
-
-    .monitor-container:hover .monitor-frame {
-        transform: rotateX(0deg) rotateY(0deg) scale(1.01);
-    }
-
-    /* Responsividade para o Mobile */
-    .mobile-container {
-        width: 150px;
-        height: 300px;
-        right: 3%;
-    }
-
-    .mobile-frame {
-        transform: rotateY(-5deg) rotateX(0deg);
-    }
-
-    .mobile-container:hover .mobile-frame {
-        transform: rotateY(-3deg) rotateX(0deg) scale(1.01);
-    }
-
-    /* Ajustes para imagens flutuantes em mobile */
-    .floating-space {
-        width: 120px;
-        height: 120px;
-    }
-
-    .space-1 {
-        top: 5%;
-        left: 20%;
-        transform: rotate(-6deg);
-    }
-
-    .space-3 {
-        top: 0%;
-        right: 0%;
-        transform: rotate(-4deg);
-    }
-
-    .space-4 {
-        top: 70%;
-        left: 0%;
-        transform: rotate(5deg);
-    }
-
-    .cta-title {
-        font-size: 2.2rem;
-    }
-
-    /* Responsividade para mobile da seção app */
-    .app-image {
-        height: 400px;
-    }
-
-    .app-mobile-container {
-        width: 200px;
-        height: 400px;
-    }
-
-    .app-mobile-frame {
-        transform: rotateY(-5deg) rotateX(0deg);
-    }
-
-    .app-mobile-container:hover .app-mobile-frame {
-        transform: rotateY(-3deg) rotateX(0deg) scale(1.01);
-    }
-
-    .cta-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cta-primary, .cta-secondary {
-        padding: 15px 30px;
-        font-size: 1.1rem;
-    }
-
-    .nav-menu {
-        display: none;
-    }
-
-    .mobile-menu-toggle {
-        display: block;
-    }
-
-    .header-right {
-        gap: 15px;
-    }
-
-    .language-selector {
-        gap: 5px;
-    }
-
-    .lang-btn {
-        padding: 4px 8px;
-        font-size: 0.8rem;
-    }
-
-    .header-cta {
-        padding: 8px 20px;
-        font-size: 0.9rem;
-    }
-
-    .footer-top {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-/* Botão Voltar ao Topo */
-.back-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
-    color: #1a1a1a;
-    border: 2px solid #1a1a1a;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 18px;
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
-    transition: all 0.3s ease;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(20px);
-    z-index: 1000;
-}
-
-.back-to-top.show {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.back-to-top:hover {
-    transform: translateY(-3px);
-    background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
-    color: #ffd700;
-    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
-}
-
-@media (max-width: 480px) {
-    .hero-text h1 {
-        font-size: 2rem;
-    }
-
-    .cta-buttons {
-        gap: 15px;
-    }
-
-    .btn-primary, .btn-secondary {
-        padding: 12px 25px;
-        font-size: 1rem;
-    }
-
-    .back-to-top {
-        bottom: 20px;
-        right: 20px;
-        width: 45px;
-        height: 45px;
-        font-size: 16px;
-    }
-
-    /* Ajustes para imagens flutuantes em telas muito pequenas */
-    .floating-space {
-        width: 100px;
-        height: 100px;
-    }
-
-    .space-1 {
-        top: 10%;
-        left: 15%;
-        transform: rotate(-4deg);
-    }
-
-    .space-3 {
-        top: 5%;
-        right: 5%;
-        transform: rotate(-3deg);
-    }
-
-    .space-4 {
-        top: 65%;
-        left: 5%;
-        transform: rotate(4deg);
-    }
-
-    .logo-img {
-        height: 35px;
-    }
-
-    .footer-logo-img {
-        height: 30px;
-    }
-}
